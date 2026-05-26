@@ -1,0 +1,62 @@
+nav {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 2;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(202, 202, 255);
+  padding: 30px;
+  box-shadow: 1px 1px 4px rgb(84, 84, 231);
+}
+
+nav a {
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: x-large;
+  text-decoration: none;
+  color: rgb(53, 53, 158)
+}
+
+nav a:hover {
+  color: rgb(54, 35, 7);
+  cursor: pointer;
+
+}
+
+@media (max-width:768px) {
+
+  .nav {
+    flex-direction: column;
+    gap: 0.5rem;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    background-color: rgb(202, 202, 255);
+    transition: 0.3s;
+  }
+
+  .hamburger-menu {
+    border: 1px solid rgb(60, 59, 59);
+    display: block;
+    z-index: 10;
+    position: fixed;
+  top: 10px;
+    left: 10px;
+    background-color: white;
+    border-radius: 20%;
+    padding: 5px;
+    font-size: 30px;
+  }
+
+  .nav a {
+    font-size: 20px;
+  }
+
+  .nav.active {
+    right: 0;
+  }
+
+}

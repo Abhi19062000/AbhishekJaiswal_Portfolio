@@ -1,0 +1,113 @@
+#education table,
+tr,
+td,
+th {
+    border: 1px solid black;
+    border-collapse: collapse;
+
+}
+
+table {
+
+    margin: 20px auto;
+    box-shadow: 1px 1px 10px rgb(186, 191, 191);
+    width: 100%;
+    overflow: auto;
+}
+
+#education {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 70px auto;
+}
+
+th {
+    padding: 20px;
+    font-size: 25px;
+    background-color: aliceblue;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(246, 241, 235);
+}
+
+tr:nth-child(odd) {
+    background-color: rgb(211, 211, 211);
+}
+
+tr,
+td {
+    padding: 20px;
+    font-size: 22px;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@media (min-width:1024px) and (max-width:1440px) {
+    #education {
+        margin: 60px 0px 60px 0px;
+        overflow-x: auto;
+    }
+
+    table {
+        width: 90%;
+    }
+
+    th {
+        padding: 18px;
+        font-size: 24px;
+    }
+
+    tr,
+    td {
+        padding: 18px;
+        font-size: 23px;
+    }
+}
+
+
+@media (min-width:768px) and (max-width:1024px) {
+    #education {
+        margin: 25px;
+    }
+
+    th {
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    td {
+        padding: 17px;
+        font-size: 21px;
+    }
+}
+
+@media (max-width:768px) {
+    #education {
+        margin: 20px;
+    }
+
+    th {
+        padding: 8px;
+        font-size: 17px;
+    }
+
+    td {
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    .table-container {
+        overflow-x: auto;
+        width: 100%;
+    }
+
+    table {
+        min-width: 500px;
+    }
+
+}

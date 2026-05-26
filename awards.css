@@ -1,0 +1,73 @@
+#awards {
+    margin: 70px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.award-con {
+    width: 75%;
+}
+
+.award-con .award {
+    margin: 20px auto;
+    background-color: rgb(227, 231, 231);
+    border: 1px solid rgb(186, 191, 191);
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgb(186, 191, 191);
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    font-size: x-large;
+    padding: 40px;
+}
+
+.award i {
+    color: rgb(14, 11, 166);
+    font-weight: 800;
+}
+
+@media (min-width:1024px) and (max-width:1440px) {
+    #awards {
+        margin: 60px auto;
+    }
+
+    .award-con {
+        width: 81%;
+    }
+
+    .award-con .award {
+        font-size: 24px;
+    }
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+    .award-con {
+        width: 91%;
+    }
+
+    #awards {
+        margin: 25px 0px;
+    }
+
+    .award-con .award {
+        font-size: 22px;
+    }
+}
+
+@media (max-width:768px) {
+    #awards {
+        margin: 0px 10px 5px 10px;
+    }
+
+    .award-con {
+        width: 100%;
+        ;
+    }
+
+    .award-con .award {
+        padding: 15px;
+        line-height: 1.2;
+        font-size: 17px;
+    }
+}

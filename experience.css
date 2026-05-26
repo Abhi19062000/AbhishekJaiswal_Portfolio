@@ -1,0 +1,130 @@
+#experience {
+    margin: 70px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.experience-con {
+    width: 75%;
+}
+
+#experience .exp {
+    margin: 20px auto;
+    background-color: rgb(246, 241, 235);
+    border: 1px solid rgb(186, 191, 191);
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgb(186, 191, 191);
+    padding: 40px;
+}
+
+.exp h2 {
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 400;
+    font-size: xx-large;
+    color: rgb(14, 11, 166);
+    margin: 0px auto 20px auto;
+
+}
+
+.exp h3 {
+    color: rgb(1, 61, 41);
+
+}
+
+.exp h3,
+.exp span {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: x-large;
+    font-style: normal;
+    line-height: 1.5;
+}
+
+.exp i {
+    color: rgb(1, 0, 79);
+}
+
+span {
+    color: black !important;
+}
+
+@media (min-width:1024px) and (max-width:1440px) {
+    #experience {
+        margin: 60px auto;
+    }
+
+    .experience-con {
+        width: 81%;
+    }
+
+    .exp h2 {
+        font-size: 27px;
+    }
+
+    .exp i {
+        font-size: 25px;
+    }
+
+    .exp h3,
+    .exp span {
+        font-size: 24px;
+        line-height: 1.3;
+    }
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+    #experience {
+        margin: 25px 0px;
+    }
+
+    #experience .exp {
+        padding: 30px
+    }
+
+    .experience-con {
+        width: 91%;
+    }
+
+    .exp h2 {
+        font-size: 25px;
+        margin: 0px auto 15px auto;
+    }
+
+    .exp i {
+        font-size: 24px;
+    }
+
+    .exp h3,
+    .exp span {
+        font-size: 22px;
+        line-height: 1.2;
+    }
+}
+
+@media (max-width:768px) {
+    #experience {
+        margin: 0px 10px 5px 10px;
+    }
+
+    #experience .exp {
+        padding: 15px;
+    }
+
+    .experience-con {
+        width: 100%;
+    }
+
+    .exp h2 {
+        font-size: 18px;
+        margin: 0px auto 5px auto;
+    }
+
+    .exp h3,
+    .exp span {
+        font-size: 17px !important;
+        line-height: 1.2;
+    }
+}

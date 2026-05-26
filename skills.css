@@ -1,0 +1,317 @@
+#skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 70px auto;
+}
+
+.skill-12,
+.work-sample-con {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-12 {
+    width: 70%;
+}
+
+.work-sample-con {
+    width: 100%;
+}
+
+#skills ul {
+    margin: 20px;
+}
+
+.skill-con {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid rgb(186, 191, 191);
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgb(227, 231, 231);
+    margin: 20px auto 40px auto;
+    box-shadow: 1px 1px 10px rgb(186, 191, 191);
+
+}
+
+.additional-skill ul {
+    width: 50%;
+}
+
+.skill-12 h3 {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    font-size: xx-large;
+    font-style: normal;
+    line-height: 1.2;
+    margin: 20px auto;
+}
+
+.skill-con li {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: x-large;
+    font-style: normal;
+    line-height: 1.5;
+}
+
+.skill-12 h4 {
+    font-size: xx-large;
+    text-decoration: underline;
+    margin: 20px 0px 50px 0px;
+}
+
+.shorts-container {
+    width: 100%;
+    overflow-x: auto;
+    display: flex;
+    padding: 20px;
+    scroll-behavior: smooth;
+    gap: 20px;
+}
+
+.short-con {
+    border: 1px solid black;
+    min-width: 200px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgb(186, 191, 191);
+
+}
+
+.short-con img {
+    position: absolute;
+    top: 0px;
+    width: 80%;
+    height: 80%;
+    padding: 10px;
+    opacity: 0.2;
+}
+
+.image-con {
+    z-index: 1;
+}
+
+.image-con span {
+    display: block;
+}
+
+.short-con span {
+    font-size: x-large;
+    font-weight: bold;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.short-con a {
+    background-color: rgb(153, 152, 152);
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+    font-size: x-large;
+    text-decoration: none;
+    position: absolute;
+    bottom: 0px;
+    font-family: "Josefin Sans", sans-serif;
+    color: rgb(87, 74, 58);
+    cursor: pointer;
+    z-index: 1;
+    animation-name: buttonAnimate;
+    animation: buttonAnimate 2s infinite alternate linear;
+
+}
+
+@keyframes buttonAnimate {
+    from {
+        background-color: rgb(153, 152, 152);
+        color: white
+    }
+
+    to {
+        background-color: rgb(204, 146, 255);
+        color: rgb(28, 245, 17);
+    }
+}
+
+.short-con a:hover {
+    color: rgb(68, 56, 42);
+}
+
+.image-con span:nth-child(1) {
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    z-index: 1;
+    color: rgb(14, 11, 166) !important;
+    text-decoration: underline;
+    text-align: center;
+    width: 100%;
+}
+
+.image-con span:nth-child(2) {
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    z-index: 1;
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.long-video-sample {
+    scroll-behavior: smooth;
+    margin: 40px 0px 40px 0px;
+    height: 400px;
+    width: 600px;
+}
+
+iframe {
+    height: 100%;
+    width: 100%;
+}
+
+@media (min-width:1024px) and (max-width:1440px) {
+    #skills {
+        margin: 60px auto;
+    }
+
+    .skill-12 {
+        width: 90%;
+    }
+
+
+    .skill-12 h3 {
+        font-size: 25px;
+    }
+
+    .skill-con li {
+        font-size: 24px;
+    }
+
+    .skill-12 h4 {
+        font-size: 30px;
+        margin: 20px 0px 20px 0px;
+
+    }
+
+    .work-sample-con {
+        width: 100%;
+        z-index: 1;
+    }
+
+    .short-con {
+        min-width: 200px;
+        height: 300px;
+    }
+
+    .long-video-sample {
+        height: 315px;
+        width: 550px;
+    }
+
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+    #skills {
+        margin: 25px 0px;
+    }
+
+    .skill-12 {
+        width: 90%;
+    }
+
+    .skill-con li {
+        font-size: 22px;
+        line-height: 1.2;
+
+    }
+
+    .skill-12 h3 {
+        font-size: 24px;
+    }
+
+    .skill-12 h4 {
+        font-size: 28px;
+        margin: 15px 0px 15px 0px;
+
+    }
+
+    .skill-con {
+        margin: 12px auto 20px auto;
+    }
+
+
+    .long-video-sample {
+
+        height: 300px;
+        width: 500px;
+    }
+}
+
+@media (max-width:768px) {
+    #skills {
+        margin: 0px 10px 5px 10px;
+    }
+
+    .skill-12 {
+        width: 100%;
+    }
+
+    .skill-con {
+        padding: 5px !important;
+        margin: 0px 0px 10px 0px !important;
+    }
+
+    .skill-con li {
+        font-size: 17px !important;
+        line-height: 1.2;
+
+    }
+
+    .skill-12 h3 {
+        font-size: 18px;
+    }
+
+    .skill-12 h4 {
+        font-size: 22px;
+        margin: 10px 0px 10px 0px;
+
+    }
+
+    .skill-con {
+        margin: 12px auto 20px auto;
+    }
+
+    .short-con {
+        min-width: 120px;
+        height: 200px;
+    }
+
+    .short-con a {
+        font-size: 12px;
+        font-weight: bold;
+        padding: 7px;
+    }
+
+    .image-con span {
+        font-size: 16px !important;
+    }
+
+    .long-video-sample {
+        height: 220px;
+        width: 400px;
+    }
+
+}
