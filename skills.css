@@ -62,6 +62,13 @@
     line-height: 1.5;
 }
 
+.skill-con ul li span{
+    font-style: italic;
+    font-weight: bold;
+    font-size: x-large;
+    color: brown !important;
+}
+
 .skill-12 h4 {
     font-size: xx-large;
     text-decoration: underline;
@@ -251,13 +258,16 @@ iframe {
     .skill-con {
         margin: 12px auto 20px auto;
     }
-
+ .skill-con ul li span{
+    font-size: 22px;
+    }
 
     .long-video-sample {
 
         height: 300px;
         width: 500px;
     }
+
 }
 
 @media (max-width:768px) {
@@ -313,5 +323,7 @@ iframe {
         height: 220px;
         width: 400px;
     }
-
+    .skill-con ul li span{
+    font-size: 17px;
+    }
 }
